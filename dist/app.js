@@ -1,8 +1,8 @@
 "use strict";
+const add = (a, b) => a + b;
+const printOutput = output => console.log(output);
 const button = document.querySelector('button');
-function clickHandler(message) {
-    console.log("Clicked! " + message);
-}
 if (button) {
-    button.addEventListener('click', clickHandler.bind(null, "You're welcome"));
+    button.addEventListener('click', event => console.log(event));
 }
+printOutput(add(2, 5));
