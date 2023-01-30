@@ -7,12 +7,12 @@ const person = {
     age: 30
 };
 const copiedPerson = Object.assign({}, person);
-const add = (...numbers) => {
+const add2 = (...numbers) => {
     return numbers.reduce((curResult, curValue) => {
         return curResult + curValue;
     }, 0);
 };
-const addedNumbers = add(5, 10, 2, 3.7);
+const addedNumbers = add2(5, 10, 2, 3.7);
 console.log(addedNumbers);
 const [hobby1, hobby2, ...remainingHobbies] = hobbies;
 console.log(hobbies, hobby1, hobby2);
