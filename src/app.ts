@@ -44,6 +44,12 @@ const fetchedUserData = {
 // console.log(fetchedUserData.job && fetchedUserData.job.title);
 console.log(fetchedUserData?.job?.title);
 
+const userInput = '';
+
+const storedData = userInput ?? 'DEFAULT';
+
+console.log(storedData);
+
 // type UnknownEmployee = Admin | Employee;
 
 // function printEmployeeInformation(emp: UnknownEmployee) {
