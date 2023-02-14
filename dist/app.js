@@ -43,3 +43,11 @@ textStorage.addItem('Manu');
 textStorage.removeItem('Max');
 console.log(textStorage.getItems());
 const numberStorage = new DataStorage();
+function createCourseGoal(title, description, date) {
+    let courseGoal = {};
+    courseGoal.title = title;
+    courseGoal.description = description;
+    courseGoal.completeUntil = date;
+    return courseGoal;
+}
+const names = ['Max', 'Anna'];
