@@ -5,7 +5,19 @@ function Logger(logString: string) {
     }
 }
 
-@Logger('LOGGING - PERSON')
+function WithTemplate(template: string, hookId: string) {
+    return function (constructor: any) {
+        const hookElement = document.getElementById(hookId);
+        const p = new constructor();
+        if (hookElement) {
+            hookElement.innerHTML = template;
+            hookElement.querySelector('h1')!.textContent = p.name;
+        }
+    }
+}
+
+// @Logger('LOGGING - PERSON')
+@WithTemplate('<h1>My Person object</h1>', 'app')
 class Person {
     name = 'Max';
 
@@ -14,6 +26,5 @@ class Person {
     }
 }
 
-// const pers = new Person();
-
-// console.log(pers)
+const pers = new Person();
+console.log(pers)
