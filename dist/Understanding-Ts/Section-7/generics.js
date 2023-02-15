@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 function merge(objA, objB) {
     return Object.assign(objA, objB);
 }
