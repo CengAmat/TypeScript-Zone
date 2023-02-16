@@ -120,3 +120,19 @@ __decorate([
 const p = new Printer();
 const button = document.querySelector('button');
 button.addEventListener('click', p.showMessage);
+class Course {
+    constructor(t, p) {
+        this.title = t;
+        this.price = p;
+    }
+}
+const courseForm = document.querySelector('form');
+courseForm.addEventListener('submit', event => {
+    event.preventDefault();
+    const titleElement = document.getElementById('title');
+    const priceElement = document.getElementById('price');
+    const title = titleElement.value;
+    const price = +priceElement.value;
+    const createdCourse = new Course(title, price);
+    console.log(createdCourse);
+});
