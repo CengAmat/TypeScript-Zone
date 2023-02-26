@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 // import { Router } from 'react-router-dom';
-import NewTodo from './components/NewTodo';
+import NewTodo from './components/NewTodo.dev';
 import { Todo } from './todo.model';
-import TodoList from './components/TodoList';
+import TodoList from './components/TodoList.dev';
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
