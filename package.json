@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server"
+    "start": "webpack-dev-server",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,7 @@
   },
   "homepage": "https://github.com/CengAmat/TypeScript-Zone#readme",
   "devDependencies": {
-    "@types/lodash": "^4.14.191",
-    "lite-server": "^2.6.1"
+    "@types/lodash": "^4.14.191"
   },
   "dependencies": {
     "lodash": "^4.17.21",

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // import { Router } from 'react-router-dom';
 import NewTodo from './components/NewTodo.dev';
-import { Todo } from './todo.model';
+import { Todo } from './todo.model.dev';
 import TodoList from './components/TodoList.dev';
 
 const App: React.FC = () => {
