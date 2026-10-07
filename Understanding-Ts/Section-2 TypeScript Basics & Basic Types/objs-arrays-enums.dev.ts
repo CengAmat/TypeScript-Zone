@@ -1,3 +1,4 @@
+// Explicitly defined object type
 // const person: {
 //     name: string;
 //     age: number;
@@ -17,8 +18,9 @@
 // const AUTHOR = 2;
 
 enum Role { ADMIN = 5, READ_ONLY, AUTHOR }
+console.log(Role.AUTHOR)
 
-const person = {
+const person2 = {
     name: 'Maximilian',
     age: 30,
     hobbies: ['Sports', 'Cooking '],
@@ -33,13 +35,24 @@ const person = {
 let favouriteActivities: string[];
 favouriteActivities = ['Swimming'];
 
-console.log(person.name)
+console.log(person2.name)
 
-for (const hobby of person.hobbies) {
+for (const hobby of person2.hobbies) {
     console.log(hobby);
     // console.log(hobby.map()); // !!! ERROR !!!
 }
 
-if (person.role === Role.ADMIN) {
+if (person2.role === Role.ADMIN) {
     console.log('is admin')
 }
+
+// let val: {} = 'some text';
+// let val: {} = null;
+let val: Record<string, string> = {
+    name: 'Max',
+    1: '30',
+};
+val.name = 'Max';
+
+
+const someObject = {};
