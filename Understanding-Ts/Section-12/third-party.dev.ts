@@ -1,5 +1,5 @@
 import 'reflect-metadata';
-import { plainToClass } from 'class-transformer';
+import { plainToInstance } from 'class-transformer';
 import { validate } from 'class-validator';
 
 import { Product } from "./product.model";
@@ -24,7 +24,7 @@ validate(newProd).then(errors => {
 //     return new Product(prod.title, prod.price);
 // })
 
-const transformedProducts = plainToClass(Product, products);
+const transformedProducts = plainToInstance(Product, products);
 
 for (const prod of transformedProducts) {
     console.log(prod.getInformation())

@@ -1,11 +1,11 @@
 {
   "name": "typescript-zone",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "TypeScript learning workspace with course examples and mini-projects",
+  "main": "dist/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
+    "start": "webpack serve --config webpack.config.js",
     "build": "webpack --config webpack.config.js"
   },
   "repository": {
@@ -19,19 +19,19 @@
   },
   "homepage": "https://github.com/CengAmat/TypeScript-Zone#readme",
   "devDependencies": {
-    "@types/googlemaps": "^3.43.3",
-    "@types/lodash": "^4.14.191"
+    "@types/google.maps": "^3.66.5",
+    "@types/lodash": "^4.17.25",
+    "ts-loader": "^9.6.2",
+    "typescript": "^5.9.3",
+    "webpack": "^5.111.1",
+    "webpack-cli": "^7.2.3",
+    "webpack-dev-server": "^6.0.0"
   },
   "dependencies": {
-    "axios": "^1.3.4",
+    "axios": "^1.20.0",
     "class-transformer": "^0.5.1",
-    "class-validator": "^0.14.0",
-    "lodash": "^4.17.21",
-    "reflect-metadata": "^0.1.13",
-    "ts-loader": "^9.4.2",
-    "typescript": "^4.9.5",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.11.1"
+    "class-validator": "^0.15.1",
+    "lodash": "^4.18.1",
+    "reflect-metadata": "^0.2.2"
   }
 }
