@@ -23,7 +23,7 @@ console.log(Role.AUTHOR)
 const person2 = {
     name: 'Maximilian',
     age: 30,
-    hobbies: ['Sports', 'Cooking '],
+    hobbies: ['Sports', 'Cooking'],
     role: Role.ADMIN
 };
 
