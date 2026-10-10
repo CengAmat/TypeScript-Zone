@@ -1,0 +1,13 @@
+{
+  "name": "section-5-next-generation-javascript---typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "next-gen-javascript.dev.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
